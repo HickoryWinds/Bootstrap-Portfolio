@@ -17,37 +17,27 @@ body {
 }
 
 nav {
-    float: right;
+    /* float: center; */
     padding-top: 20px;
     padding-bottom: 16px;
     padding-right: 10px;
 }
 
 a {
-    color: teal;
+    color: rgb(128, 0, 21);
     font-family: Arial, Helvetica, sans-serif;
     /* remove underline from link */
     text-decoration: none;
 }
 
-@media screen and (max-width: 768px) {
-    nav {
-        padding-right: 145px;
-        /* float:none; */
-    }
-    
-    a {
-        text-align: center;
-    }
-}
 
 .namebkg {
     font-weight: bold;
     font-family: Georgia, Times, 'Times New Roman', serif;
-    background-color:teal;
+    background-color: red;
     color: white;
     min-width: 150px;
-    border-bottom: 5px solid #cccccc;
+    /* border-bottom: 5px solid #cccccc; */
 }
 
 .name {
@@ -56,7 +46,11 @@ a {
 }
 
 .navs {
-    border-bottom: 5px solid #cccccc;
+    /* position: fixed;
+    top: 0;
+    right: 0;
+    height: 11%;*/
+    /* border-bottom: 5px solid #cccccc; */
     background-color: #ffffff;
 }
 
@@ -68,6 +62,14 @@ a {
     padding-left: 15px;
     /* border-bottom: 5px solid #cccccc; */
 }
+
+/* .rightSp {
+    position: fixed;
+    right: 0;
+    height: 10.5%;
+    border-bottom: 5px solid #cccccc;
+    background-color: #ffffff;
+} */
 
 #formcon {
     font-family: Arial, Helvetica, sans-serif;
@@ -107,8 +109,38 @@ a {
     text-align: center;
 }
 
+
 .clearfix::after {
     content: "";
     clear: both;
     display: table;
 }
+
+@media screen and (max-width: 768px) {
+    nav {
+        padding-right: 145px;
+        /* float:none; */
+    }
+    
+    a {
+        text-align: center;
+    }
+    
+}
+    /* @media screen and (max-width: 1240px) {
+    .rightSp {
+        height: 12%;
+    }
+} */
+
+/* @media screen and (max-width: 920px) {
+    .rightSp {
+        height: 15%;
+        width: 5%;
+        border-bottom: 0;
+    }
+} */
+
+/* .topRow {
+    background-color: white;
+} */
