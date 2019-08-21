@@ -14,25 +14,11 @@ body {
     background-image: url("gravel.png");
 }
 
-header {
-    height: 75px;
-    margin: auto;
-    border-bottom: 5px solid #cccccc;
-    background-color: white;
-    font-family: Georgia, Times, 'Times New Roman', serif;
-    text-align: center;
-}
-
 nav {
-    position: absolute;
-    left: 1061px;
-    height: 70px;
-    width: 250px;
-    padding: 40px 64px 10px 10px;
-    background-color: white;
-    color: teal;
-    font-size: 10pt;
-    /* float: right; */
+    float: right;
+    padding-top: 20px;
+    padding-bottom: 16px;
+    padding-right: 10px;
 }
 
 a {
@@ -42,175 +28,34 @@ a {
     text-decoration: none;
 }
 
-hr {
-    color: teal;
-}
-
-/* clear floats after the sections */
-section:after {
-    content: "";
-    display: table;
-    clear: both;
-}
 
 /* ----------------
 format classes
 -----------------*/
 
-/* main and left format section label and content area */
-.main {
-    position: absolute;
-    top: 100px;
-    left: 288px;
-    width: 960px;
-    /* width: 50%; makes page more responsive */
-    padding: 15px 25px;
-    background-color: white;
-    border-collapse: collapse;
-    color: #777777;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: left;
-    float: left;
-    overflow: hidden;
-}
-
-/* add height for portfolio main due absolute positioning of images */
-.main1 {
-    position: absolute;
-    top: 100px;
-    left: 288px;
-    width: 960px;
-    /* width: 50%; makes page more responsive */
-    height: 575px;
-    padding: 15px 25px;
-    background-color: white;
-    border-collapse: collapse;
-    color: #777777;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: left;
-    float: left;
-}
-.left {
-    padding: 15px 10px 10px 10px;
-    float: left;
-    vertical-align: text-top;
-}
-
-/* formats section label for content area*/
-.label {
-    color: teal;
-    font-size: 14pt;
-    font-weight: bold;
+/* background for name in topmost row (header) */
+.namebkg {
     font-family: Georgia, Times, 'Times New Roman', serif;
-}
-
-/* adjust paragraph line spacing */
-.lineCor {
-    line-height: 200%;
-    color: #777777;
-}
-
-/* make image position absolute so overlays stay on top when resized
-    pulls images out of body */
-.port-image {
-    position: absolute;
-    /* keep images from stretching */
-    max-width: 243px;
-    height: 150px;
-    margin-right: 5px;
-    float: left;
-}
-
-/* set image locations */
-.port-image1 {
-    top: 85px;
-    left: 50px;
-} 
-.port-image2 {
-    top: 85px;
-   left: 368px;
-} 
-
-.port-image3 {
-   top: 245px;
-   left: 50px;
-} 
-
-.port-image4 {
-   top: 245px;
-   left: 368px;
-} 
-
-.port-image5 {
-   top: 405px;
-   left: 50px;
-} 
-
-/*-------------------------------
-project picture overlay framework
------------------------------- */
-.column {
-    float: left;
-    width: 200px;;
-    padding: 5px 0px 5px 20px;
-}
-
-  .column-smsp {
-    float: left;
-    width: 100px;;
-    padding: 5px 0px 5px 20px;
-}
-
-/* clearfix (clear floats for portfolio images) */
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-/* ----------------
-format ids
------------------*/
-/* style for content label */
-#leftPara {
-    position: absolute;
-    top: 19px;
-    left: 288px;
-    height: 51px;
-    padding: 15px 10px 10px 10px;
     background-color:teal;
     color: white;
-    font-size: 14pt;
-    font-weight: bold;
-    float: left;
 }
 
-/* styling for asides */
-#sidebarA {
-    width: 18%;
-    height: 500px;
-    border-collapse: collapse;
-    background-color: transparent;
-    text-align: center;
-    float: left;
+/* padding for name in topmost row (header) */
+.name {
+    padding-left: 10px;
+    padding-top: 15px;
 }
 
-#sidebarB {
-    width: 18%;
-    min-width: 180px;
-    height: 500px;
-    float :right;
-    background-color: transparent;
-    border-collapse: collapse;
-    text-align: center;
+.label {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: teal;
+    background-color: #ffffff;
+    padding-top: 15px;
+    padding-left: 15px;
 }
 
-/* style footer */
-#footer {
-    /* used fixed position for stick footer */
-    position: fixed;
-    left: 0;
-    bottom: 0;
+/* footer on all pages */
+.footer {
     width: 100%;
     height: 55px;
     border-top: 5px solid teal;
@@ -220,100 +65,78 @@ format ids
     font-size: 8pt;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    z-index: 4;
 }
 
-/* style for photo on About Me*/
-#bio-image {
-    width: 150px;
-    height: 150px;
-    margin-right: 15px;
-    float: left;
-} 
-
-/* set height for spacers between header and content on each page */
-#spacerA {
-    height: 50px;
-    background-color: transparent;
+/* clearfix for floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
-#spacerC {
-    height: 50px;
-    background-color: transparent;
-}
-
-#spacerP {
-    height: 10px;
-    background-color: transparent;
-}
-
-/* styling to add borders across the asides via headers in each */
-#upperA {
-    height: 75px;
-    border-bottom: 5px solid #cccccc;
-    background-color: white;
-}
-
-#upperB {
-    height: 75px;
-    border-bottom: 5px solid #cccccc;
-    background-color: white;
-} 
-
-/* style for submission form */
-#submit-con {
-    width: 100px;
-    height: 30px;
-    color: white;
+/* content in about me & contact */
+.content {
+    line-height: 250%;
     font-family: Arial, Helvetica, sans-serif;
+    color: #777777;
+    background-color: #ffffff;
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
+
+/* columns holding portfolio pictures */
+.portfolio-pics {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: white;
+}
+
+/* set transparent background */
+.transpar {
+    background-color: transparent;
+}
+
+
+/* ----------------
+format ids
+-----------------*/
+
+/* contact form */
+#form-con {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #777777;
+    background-color: #ffffff;
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
+
+/* submit button on contact form */
+#sub-btn {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
     background-color: teal;
-}  
-
-#low-right {
-    position: fixed;
-    right: 0;
-    bottom: 55px;
 }
 
-/* settings common to all overlays */
-body {
-    /* Avoid the IE 10-11 `min-height` bug. */
-    height: 100vh;
-} 
 
-.overlay {
-  position: absolute;
-  background: teal;
-  color: white;
-  width: 243px;
-  opacity:1;
-  font-size: 15px;
-  padding: 20px;
-  text-align: center;
-  z-index: 2;
+/* photo in about me */
+#photo-img {
+    width: 200px;
+    height: 200px;
+    padding-top: 10px;
+    padding-right: 10px; float: left;
 }
-/* specific image overlays */
-.overlay1 {
-    top: 170px;
-    left: 50px;
-  }
-  
-  .overlay2 {
-    top: 170px;
-    left: 368px;
-  }
-  
-  .overlay3 {
-    top: 330px;
-    left: 50px;
-  }
-  
-  .overlay4 {
-    top: 330px;
-    left: 368px;
-  }
-  
-  .overlay5 {
-    top: 491px;
-    left: 50px;
-  }
+
+/* ----------------
+format media queries
+-----------------*/
+
+/* added for spacing of page links during resizing */
+@media screen and (max-width: 768px) {
+    nav {
+        padding-right: 145px;
+    }
+    
+    a {
+        text-align: center;
+    }
+}
