@@ -28,10 +28,20 @@ a {
     text-decoration: none;
 }
 
+hr {
+    border: 2px solid #cccccc;
+}
+
 
 /* ----------------
 format classes
 -----------------*/
+
+/* background for upper container (header) */
+.upper-con {
+    background-color: white;
+    border-bottom: 5px solid #cccccc;
+}
 
 /* background for name in topmost row (header) */
 .namebkg {
