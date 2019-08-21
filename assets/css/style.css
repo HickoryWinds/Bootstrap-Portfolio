@@ -66,10 +66,13 @@ format classes
 
 /* footer on all pages */
 .footer {
+    position: fixed;
+    right: 0;
+    bottom: 0;
     width: 100%;
-    height: 55px;
+    height: 40px;
     border-top: 5px solid teal;
-    padding-top: 30px;
+    padding-top: 15px;
     background-color: #666666;
     color: white;
     font-size: 8pt;
@@ -92,13 +95,6 @@ format classes
     background-color: #ffffff;
     padding-top: 5px;
     padding-bottom: 15px;
-}
-
-/* columns holding portfolio pictures */
-.portfolio-pics {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    background-color: white;
 }
 
 /* set transparent background */
